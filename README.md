@@ -14,6 +14,8 @@ Se van a usar las tecnologias aprendidas que son React y Redux. Y tambien un poc
 Instalar todas las dependencias con:
 
  - `npm install`
+
+FORKEARRRRRRRRR
 ## Requisitos
  - No usar clases.
  - Usar los hooks useEffect y useState.
