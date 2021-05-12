@@ -1,44 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+﻿# Repaso modulo 2
 
-## Available Scripts
+Hola! Nos encontramos de nuevo para pelear contra este boss final del M2 que es React-Redux y sus hooks. Principalmente los hooks a usar van a ser useState y useEffect.
 
-In the project directory, you can run:
+Se uso el npx create-react-app con template de redux.
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# App de gifs
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+La idea de este repaso es poder crear una app que sirva para visualizar gifs, tener una navbar, una searchbar y un contenedor de gifs.
+Se van a usar las tecnologias aprendidas que son React y Redux. Y tambien un poco de peticiones a una API de Giphy.
 
-### `npm test`
+## Para empezar
+Instalar todas las dependencias con:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - `npm install`
+## Requisitos
+ - No usar clases.
+ - Usar los hooks useEffect y useState.
+ - Usar mapStateToProps, mapDispatchToProps y connect.
+ - No usar hooks de react-redux.
 
-### `npm run build`
+## API key
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La pueden conseguir en el siguiente link [de Giphy](developers.giphy.com)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Tienen que investigar la API de Giphy, [ACAAAA](https://developers.giphy.com/docs/api#quick-start-guide)
+## Pasos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - Crear la navbar que va a contener un logo a la izquierda, la searchbar en el centro y a la derecha el nombre de ustedes.
+ - El logo debe dirigir al root de la pagina, es decir '/'.
+ - La searchbar debe buscar por nombre los gifs que coincidan con el input.
+ - Al presionar el nombre ustedes, debe redirigirlos al path '/aboutme' donde van a poner info de ustedes en un componente llamado AboutMe.jsx.
+ - Un contenedor abajo de la navbar para ver los gifs.
+ - Al presionar un gif debe redirigirme a '/gif/:id' donde id va a ser el id del gif clickeado.
+ - En la pagina del detalle del gif debe aparecer el gif en el centro, la navbar, el nombre del autor, y los datos que gusten que aparezcan.
+ - La navbar debe renderizarse en todas las paginas de la app, pero solo en el root de la pagina debe renderizarse la searchbar.
+ ## Extra Credit
+ 
+ - Apenas ingresen a la pagina se debe mostrar los 20 gifs trending de Giphy.
+ - Al hacer una busqueda de algun gif, solo deben mostrarse los primeros 20 gifs que coincidan con la busqueda y los trending no se deberian ver mas.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
